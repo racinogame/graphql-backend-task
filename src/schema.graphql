@@ -15,7 +15,16 @@ type Leaderboard {
   tier: String!
 }
 
+"""used to choose leaderboard"""
+input LeaderboardFilter {
+  """Leaderboard period: can be daily, weekly, season"""
+  leaderboardType: String
+
+  """Cars tier"""
+  tier: String
+}
+
 type Query {
   """Get leaderboard according to period"""
-  getLeaderboard: [Leaderboard!]!
+  getLeaderboard(filter: LeaderboardFilter): [Leaderboard!]!
 }

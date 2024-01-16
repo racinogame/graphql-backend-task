@@ -4,7 +4,7 @@ import dayjs from 'dayjs';
 
 @InputType({description: 'used to choose leaderboard'})
 export class LeaderboardFilter {
-  @Field(() => String, {nullable: false, description: "Leaderboard period: can be daily, weekly, season"})
+  @Field(() => String, {nullable: true, description: "Leaderboard period: can be daily, weekly, season"})
   leaderboardType: string;
   @Field(() => String, {nullable: true, description: "Cars tier"})
   tier: string;
