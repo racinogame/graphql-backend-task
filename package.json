@@ -1,0 +1,24 @@
+{
+  "name": "graphql-backend-task",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ts-node src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@apollo/server": "^4.10.0",
+    "dayjs": "^1.11.10",
+    "graphql": "^16.8.1",
+    "graphql-scalars": "^1.22.4",
+    "reflect-metadata": "^0.2.1",
+    "type-graphql": "^2.0.0-beta.6"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.1"
+  }
+}
